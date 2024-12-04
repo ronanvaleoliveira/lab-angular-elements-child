@@ -3,6 +3,7 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { BrowserModule } from "@angular/platform-browser";
 import { HomeModule } from "./modules/home/home.module";
+import { PainelFiscalModule } from "./modules/painel-fiscal/painel-fiscal.module";
 
 
 @NgModule({
@@ -12,7 +13,9 @@ import { HomeModule } from "./modules/home/home.module";
     imports: [
         BrowserModule,
         AppRoutingModule,
-        HomeModule
+        
+        HomeModule,
+        PainelFiscalModule
     ],
     bootstrap: [
         AppComponent
