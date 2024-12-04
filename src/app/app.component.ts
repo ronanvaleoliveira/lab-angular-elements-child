@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'lab-angular-elements-child';
+  
+  constructor(private router: Router) {}
+
+  navigateToHome() {
+    this.router.navigate(['/']);
+  }
+  navigateToPainelFiscal() {
+    this.router.navigate(['/painel-fiscal']);
+  }
 }
