@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { PainelFiscalHomeComponent } from './painel-fiscal-home/painel-fiscal-home.component';
 import { PainelFiscalRoutingModule } from './painel-fiscal-routing.module';
 import { PainelFiscalDashboardComponent } from './painel-fiscal-dashboard/painel-fiscal-dashboard.component';
+import { PoModule } from '@po-ui/ng-components';
 
 
 
@@ -14,7 +15,7 @@ import { PainelFiscalDashboardComponent } from './painel-fiscal-dashboard/painel
   imports: [
     CommonModule,
     PainelFiscalRoutingModule,
-    
+    PoModule
   ]
 })
 export class PainelFiscalModule { }

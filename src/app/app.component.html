@@ -1,13 +1,35 @@
-<div>
-  <div style="margin-top: 15px;"> 
-    <h2 style="text-align: center;">Bem vindo - Aplicação Filha</h2>
-    <h3 style="text-align: center; color: gray;">🚀 lab-angular-elements-child 🚀</h3>
-  </div>
-  <hr>
-  <button style="margin: 5px;" (click)="navigateToHome()">🏠 Home</button>
-  <button style="margin: 5px;" (click)="navigateToPainelFiscal()">🗓️ Painel</button>
-  <hr>
-   
-  <router-outlet></router-outlet>
+<div class="po-row">
+  <div class="po-md-12 po-lg-12">
+    
+    
+    <div class="po-row"> 
+      <div class="po-md-12 po-lg-12">
+        <po-container class="po-lg-12 po-mt-2">
 
+        <div class="po-md-12 po-lg-12" >
+          <h2 style="text-align: center;">Bem vindo - Aplicação Filha</h2>
+          <h3 style="text-align: center; color: gray;">🚀 lab-angular-elements-child 🚀</h3>
+        </div>
+        </po-container>
+      </div>
+    </div>
+    
+    <div class="po-row">
+      <div class="po-md-12 po-lg-12">
+        
+        <po-container class="po-lg-12 po-mt-2">
+          <po-button p-kind="secondary" style="margin: 5px;" p-label="🏠 Home" (p-click)="navigateToHome()"> </po-button>
+          <po-button p-kind="secondary" style="margin: 5px;" p-label="🗓️ Painel" (p-click)="navigateToPainelFiscal()"> </po-button>
+        </po-container>
+        
+        <po-container class="po-lg-12 po-mt-2">
+          <router-outlet></router-outlet>
+        </po-container>
+      </div>
+    </div>
+
+    
+  </div>
 </div>
+
+    
