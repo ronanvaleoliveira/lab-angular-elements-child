@@ -3,10 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "start": "ng serve lab-angular-elements-child",
+    "build": "ng build lab-angular-elements-child",
+    "watch": "ng build lab-angular-elements-child --watch --configuration development",
+    "test": "ng test",
+    "buildelementsprod": "ng build lab-angular-elements-child-elements --configuration production  && jscat ./dist/lab-angular-elements-child-elements/runtime.js ./dist/lab-angular-elements-child-elements/polyfills.js ./dist/lab-angular-elements-child-elements/main.js > dist/lab-angular-elements-child-elements/labangularelementschildelements.js",
+    "buildelementsdev":  "ng build lab-angular-elements-child-elements --configuration development && jscat ./dist/lab-angular-elements-child-elements/runtime.js ./dist/lab-angular-elements-child-elements/polyfills.js ./dist/lab-angular-elements-child-elements/main.js > dist/lab-angular-elements-child-elements/labangularelementschildelements.js",
+    "buildprod":         "ng build lab-angular-elements-child --output-path C:\\RM\\Atual\\Release\\Bin\\wwwroot\\lab-angular-elements-child"
   },
   "private": true,
   "dependencies": {
@@ -14,11 +17,13 @@
     "@angular/common": "^18.2.0",
     "@angular/compiler": "^18.2.0",
     "@angular/core": "^18.2.0",
+    "@angular/elements": "^18.2.13",
     "@angular/forms": "^18.2.0",
     "@angular/platform-browser": "^18.2.0",
     "@angular/platform-browser-dynamic": "^18.2.0",
     "@angular/router": "^18.2.0",
     "@po-ui/ng-components": "^18.18.0",
+    "jscat": "^0.0.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.10"
