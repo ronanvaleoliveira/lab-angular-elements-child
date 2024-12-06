@@ -1,0 +1,8 @@
+{
+  "apiServer": "",
+  "urlHub": "http://localhost:8051/api/framework/v1/realtime/hubs",
+  "basePath": "",
+  "defaultAlias": "",
+  "name": "",
+  "transport": 2
+}
